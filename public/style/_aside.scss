@@ -48,14 +48,14 @@ aside {
 	// TODO: Replace this with Bootstrap's breakpoints
 	@media screen and (max-width: 1100px) {
 		padding-top: 3rem;
-		h1 {
+		> h1 {
 			font-size: calc(12px + 3vw);
 			text-align: center;
 		}
-		p {
+		> p {
 			text-align: center;
 		}
-		ul {
+		> ul {
 			display: none;
 		}
 	}
