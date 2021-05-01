@@ -1,0 +1,65 @@
+section {
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		> article {
+			display: flex;
+			// TODO: Change the color with the Bootstrap variable
+			border-top: 1px solid #dee2e6;
+			// TODO: Change the color with the Bootstrap variable
+			border-bottom: 1px solid #dee2e6;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+			h2 {
+				font-family: 'Open Sans', sans-serif;
+				font-weight: lighter;
+				font-size: calc(12px + 3vw);
+				letter-spacing: -0.5px;
+				margin: 0rem;
+				a {
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			h3 {
+				font-family: 'Open Sans', sans-serif;
+				font-weight: normal;
+				font-size: calc(12px + 2.3vw);
+				letter-spacing: 0px;
+				margin: 0rem;
+			}
+			p {
+				font-family: 'Roboto', sans-serif;
+				font-weight: normal;
+				font-size: calc(12px + 0.26vw);
+				letter-spacing: 0.5px;
+				margin: 1rem 0rem;
+			}
+			a {
+				text-decoration: none;
+				img {
+					width: calc(12px + 1.25vw);
+					margin-right: 1rem;
+				}
+			}
+			.btn {
+				font-family: 'Roboto', sans-serif;
+				font-weight: normal;
+				font-size: calc(12px + 0.1vw);
+				letter-spacing: 1.25px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	// TODO: Change the breakpoint to Bootstrap's variable
+	@media screen and (min-width: 1100px) {
+		margin-left: 20vw;
+	}
+}
