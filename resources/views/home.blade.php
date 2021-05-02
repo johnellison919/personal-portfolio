@@ -18,13 +18,13 @@
 					<article class="border-top border-bottom py-5 d-flex">
 						<div class="pe-3 my-auto">
 							<picture>
-								<source srcset="PLACEHOLDER.webp" type="image/webp">
-								<img src="PLACEHOLDER.png" alt="PLACEHOLDER" class="PLACEHOLDER me-3">
+								<source srcset="https://via.placeholder.com/150x150" type="image/webp">
+								<img src="https://via.placeholder.com/150x150" alt="PLACEHOLDER" class="img-fluid me-3">
 							</picture>
 						</div>
 						<div class="my-auto">
 							<h2 class="m-0 fw-light">
-								<a href="PLACEHOLDER">PLACEHOLDER</a>
+								<a href="/test">PLACEHOLDER</a>
 							</h2>
 							<p class="my-3">
 								PLACEHOLDER CONTENT

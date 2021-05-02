@@ -17,8 +17,8 @@
 				<div class="d-flex flex-column justify-content-center py-5 px-3">
 					<div class="py-5">
 						<div>
-							<div class="d-flex justify-content-between align-items-center">
-								<h2>PLACEHOLDER</h2>
+							<div class="d-flex justify-content-between align-items-center border-bottom mb-3 pb-3">
+								<h2 class="fw-light">PLACEHOLDER</h2>
 								<a class="btn btn-primary d-flex align-items-center justify-content-center" href="/">
 									<svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" class="bi bi-arrow-left-circle me-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -27,18 +27,17 @@
 									Return
 								</a>
 							</div>
-							<hr>
 							<div class="px-5 mb-3 text-center">
 								<picture>
-									<source type="image/webp" srcset="PLACEHOLDER">
-									<img src="https://via.placeholder.com/150x150" alt="PLACEHOLDER" class="PLACEHOLDER">
+									<source type="image/webp" srcset="https://via.placeholder.com/1400x400">
+									<img src="https://via.placeholder.com/1400x400" alt="PLACEHOLDER" class="img-fluid">
 								</picture>
 							</div>
-							<h3>Project Brief</h3>
+							<h3 class="fw-light">Project Brief</h3>
 							<p>
 								PLACEHOLDER
 							</p>
-							<h3>My Role</h3>
+							<h3 class="fw-light">My Role</h3>
 							<p>
 								PLACEHOLDER
 							</p>
