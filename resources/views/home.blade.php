@@ -14,19 +14,19 @@
 		<main>
 			@include('partials.aside')
 			<section>
-				<div class="content">
-					<article>
+				<div class="d-flex flex-column justify-content-center py-5 px-3">
+					<article class="border-top border-bottom py-5 d-flex">
 						<div class="pe-3 my-auto">
 							<picture>
 								<source srcset="PLACEHOLDER.webp" type="image/webp">
-								<img src="PLACEHOLDER.png" alt="PLACEHOLDER" class="PLACEHOLDER">
+								<img src="PLACEHOLDER.png" alt="PLACEHOLDER" class="PLACEHOLDER me-3">
 							</picture>
 						</div>
 						<div class="my-auto">
-							<h2>
+							<h2 class="m-0 fw-light">
 								<a href="PLACEHOLDER">PLACEHOLDER</a>
 							</h2>
-							<p>
+							<p class="my-3">
 								PLACEHOLDER CONTENT
 							</p>
 						</div>
