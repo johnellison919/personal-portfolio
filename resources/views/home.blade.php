@@ -19,7 +19,7 @@
 							</picture>
 						</div>
 						<div class="my-auto">
-							<h2 class="m-0 fw-light">
+							<h2 class="fw-light">
 								<a href="{{ $project->slug }}">{{ $project->title }}</a>
 							</h2>
 							{!! $project->badges !!}

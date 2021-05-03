@@ -29,6 +29,7 @@
 								</picture>
 							</div>
 							{!! $project->body !!}
+							<h3>Technologies Used</h3>
 							{!! $project->badges !!}
 						</div>
 					</div>
