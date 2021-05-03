@@ -25,7 +25,7 @@
 						</div>
 						<div class="my-auto">
 							<h2 class="m-0 fw-light">
-								<a href="{{ $project->id }}">{{ $project->title }}</a>
+								<a href="{{ $project->slug }}">{{ $project->title }}</a>
 							</h2>
 							{!! $project->badges !!}
 						</div>
