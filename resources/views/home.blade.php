@@ -15,22 +15,22 @@
 			@include('partials.aside')
 			<section>
 				<div class="d-flex flex-column justify-content-center py-5 px-3">
+					@foreach($projects as $project)
 					<article class="border-top border-bottom py-5 d-flex">
 						<div class="pe-3 my-auto">
 							<picture>
-								<source srcset="https://via.placeholder.com/150x150" type="image/webp">
-								<img src="https://via.placeholder.com/150x150" alt="PLACEHOLDER" class="img-fluid me-3">
+								<source srcset="{{ $project->featured_image }}-thumb.webp" type="image/webp">
+								<img src="{{ $project->featured_image }}-thumb.jpg" alt="{{ $project->title }} Thumbnail" class="img-fluid me-3">
 							</picture>
 						</div>
 						<div class="my-auto">
 							<h2 class="m-0 fw-light">
-								<a href="/test">PLACEHOLDER</a>
+								<a href="{{ $project->id }}">{{ $project->title }}</a>
 							</h2>
-							<p class="my-3">
-								PLACEHOLDER CONTENT
-							</p>
+							{!! $project->badges !!}
 						</div>
 					</article>
+					@endforeach
 				</div>
 			</section>
 		</main>

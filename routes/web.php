@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Project;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-	return view('home');
+	return view('home', [
+		'projects' => Project::all()
+	]);
 });
 
-Route::get('/test', function () {
-	return view('project');
+Route::get('/{project}', function (Project $project) {
+	return view('project', [
+		'project' => $project
+	]);
 });

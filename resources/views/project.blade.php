@@ -7,8 +7,7 @@
 		<link href="/favicon.ico" rel="icon" type="image/x-icon">
 		<link href="{{ asset('style/theme.css') }}" rel="stylesheet">
 
-		<title>PLACEHOLDER | John Ellison</title>
-		<meta name="description" content="PLACEHOLDER">
+		{!! $project->head !!}
 	</head>
 	<body>
 		<main>
@@ -18,7 +17,7 @@
 					<div class="py-5">
 						<div>
 							<div class="d-flex justify-content-between align-items-center border-bottom mb-3 pb-3">
-								<h2 class="fw-light">PLACEHOLDER</h2>
+								<h2 class="fw-light">{{ $project->title }}</h2>
 								<a class="btn btn-primary d-flex align-items-center justify-content-center" href="/">
 									<svg width="1.25rem" height="1.25rem" viewBox="0 0 16 16" class="bi bi-arrow-left-circle me-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -29,19 +28,12 @@
 							</div>
 							<div class="px-5 mb-3 text-center">
 								<picture>
-									<source type="image/webp" srcset="https://via.placeholder.com/1400x400">
-									<img src="https://via.placeholder.com/1400x400" alt="PLACEHOLDER" class="img-fluid">
+									<source type="image/webp" srcset="{{ $project->featured_image }}.webp">
+									<img src="{{ $project->featured_image }}.png" alt="{{ $project->title }}" class="img-fluid">
 								</picture>
 							</div>
-							<h3 class="fw-light">Project Brief</h3>
-							<p>
-								PLACEHOLDER
-							</p>
-							<h3 class="fw-light">My Role</h3>
-							<p>
-								PLACEHOLDER
-							</p>
-							<a href="PLACEHOLDER" class="btn btn-primary">PLACEHOLDER</a>
+							{!! $project->body !!}
+							{!! $project->badges !!}
 						</div>
 					</div>
 				</div>
