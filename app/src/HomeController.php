@@ -11,13 +11,10 @@
 	#[Controller]
 	class HomeController extends BaseController{
 
-		/**
-		 * @throws ParseError
-		 * @throws ViewFileDoesNotExist
-		 * @throws LayoutDoesNotExist
-		 */
 		#[Route("GET", "/")]
 		public function homeView(): string{
-			return Renderer::renderView("home.html");
+			$viewsFolder = self::$noxInstance->getViewsDirectory();
+
+			return file_get_contents($viewsFolder . "/home.html");
 		}
 	}
