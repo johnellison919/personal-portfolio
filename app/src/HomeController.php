@@ -20,25 +20,4 @@
 		public function homeView(): string{
 			return Renderer::renderView("home.html");
 		}
-
-		/**
-		 * @throws ParseError
-		 * @throws ViewFileDoesNotExist
-		 * @throws LayoutDoesNotExist
-		 */
-		#[Route("GET", "/404")]
-		public function error404View(): string{
-			return Renderer::renderView("errors/404.html");
-		}
-
-		/**
-		 * @throws ParseError
-		 * @throws ViewFileDoesNotExist
-		 * @throws LayoutDoesNotExist
-		 */
-		#[Route("GET", "/always-404")]
-		#[NeverUsable()]
-		public function always404View(): void{
-			// Never runs
-		}
 	}
